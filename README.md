@@ -1,6 +1,17 @@
-# Zynq Sandbox
+# Argus Gateware
 
-The purpose of this repository is for me to explore how I can apply my existing embedded knowledge to the Zync FPGA-SoCsand if the Zynq chip family is right for the Argus project.
+`argus-gateware` contains FPGA gateware for the Argus Cybernetics platform, focused on real-time neural signal processing, 
+adaptive decoding, and closed-loop brain-computer interface research. The long-term goal of this repository is to provide 
+the hardware-accelerated signal-processing layer for future Argus systems. This may include acquisition interfaces, 
+filtering pipelines, event/spike detection, feature extraction, decoder acceleration, stimulation-control support logic, 
+and reconfigurable processing modules. In the broader Argus architecture, this gateware is intended to operate under the 
+supervision of the Argus Safety Controller. The safety controller will be responsible for coordinating system-level 
+constraints, validating operating modes, enforcing safety boundaries, and determining when FPGA-based processing or 
+control paths are allowed to participate in the larger closed-loop system. This repository is intentionally early-stage 
+and hardware-description-language agnostic. Its structure and implementation details may evolve as the Argus safety model, 
+neural-interface architecture, and target FPGA platforms become more clearly defined.
+
+Currently exploring how I can apply my existing embedded knowledge to the Zync FPGA-SoCsand if the Zynq chip family is right for the Argus project.
 
 ## Todos 
 
