@@ -11,7 +11,12 @@ control paths are allowed to participate in the larger closed-loop system. This 
 and hardware-description-language agnostic. Its structure and implementation details may evolve as the Argus safety model, 
 neural-interface architecture, and target FPGA platforms become more clearly defined.
 
-Currently exploring how I can apply my existing embedded knowledge to the Zync FPGA-SoCsand if the Zynq chip family is right for the Argus project.
+Currently exploring how I can apply my existing embedded knowledge to the Zync FPGA-SoCs and if the Zynq chip family is right for the Argus project.
+
+## Build System
+
+This project currently uses CMake as its build system for the embedded software application. Source files for the embedded application are registered through the Cmake configuration in `UserConfig.cmake`. You'll need to update the `sources` section in `UserConfig.cmake to include new source files so that Vitis can include them in the build. 
+
 
 ## Todos 
 
